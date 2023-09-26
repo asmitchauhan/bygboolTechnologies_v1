@@ -1,0 +1,267 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.body-main {
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-image: linear-gradient(rgb(61, 1, 117), rgb(13, 0, 26));
+    background-color: rgb(26, 1, 49);
+}
+
+header {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    background-color: blueviolet;
+    box-shadow: #000 0px -3px 10px;
+}
+
+nav {
+    height: 60px;
+    width: 100%;
+    display: flex;
+}
+
+.center-div {
+    height: 60px;
+    width: 100%;
+    background-color: blueviolet;
+}
+
+ul {
+    height: 200px;
+    width: 100%;
+    position: relative;
+    background-color: blueviolet;
+    top: -200px;
+    transition: .5s ease-in-out;
+    box-shadow: #000 0px -3px 10px;
+}
+
+.atv {
+    top: 60px;
+}
+
+ul li {
+    list-style: none;
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: .5px;
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 2%;
+    font-weight: 600;
+}
+
+ul a {
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+ul li:hover {
+    background-color: rgba(255, 255, 255, 0.308);
+}
+
+.cover {
+    height: 60px;
+    width: 100%;
+    background-color: blueviolet;
+    position: absolute;
+    top: 0;
+}
+
+.logo-div {
+    display: inline-block;
+    padding-left: 2%;
+}
+
+.logo-div #a1 {
+    color: #fff;
+    text-decoration: none;
+    line-height: 60px;
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.logo-div #a2 {
+    color: rgb(192, 192, 192);
+    text-decoration: none;
+    line-height: 60px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.bars-div {
+    height: 60px;
+    width: 60px;
+    background-color: blueviolet;
+    float: right;
+}
+
+.bars {
+    height: 20px;
+    width: 50%;
+    margin: auto;
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.bar {
+    height: 4px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: .5s ease;
+}
+
+#b1 {
+    margin-bottom: 4px;
+}
+
+#b3 {
+    margin-top: 4px;
+}
+
+.active #b1 {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.active #b2 {
+    opacity: 0;
+}
+
+.active #b3 {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.empty {
+    height: 60px;
+    width: 100%;
+}
+
+.main {
+    width: 100%;
+    height: calc(100vh - 60px);
+}
+
+.heading1 {
+    margin: 0 5% 0 5%;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.heading1 h1 {
+    color: #fff;
+    text-shadow: 0px 0px 4px #000;
+    font-size: 72px;
+    letter-spacing: 1px;
+}
+
+.heading1 h2 {
+    color: rgb(165, 70, 255);
+    font-size: 40px;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 4px #000;
+}
+
+.button {
+    margin-top: 40px;
+}
+
+.button a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    border: 2px solid #fff;
+    padding: 5px 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: .2s ease;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.button a:hover {
+    background-color: #fff;
+    color: blueviolet;
+    font-weight: 800;
+}
+
+.navig{
+    position: absolute;
+    width: auto;
+    text-align: right;
+    top: 94vh;
+    right: 1%;
+    position: fixed;
+}
+
+.navig a{
+    text-decoration: none;
+    background-color: blueviolet;
+    padding: 4px 8px;
+    border-radius: 50px;
+    transition: ease .2s;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    transition: ease .2s;
+    position: relative;
+    left: 80px;
+}
+.navig a:hover{
+    background-color: rgba(137, 43, 226, 0.842);
+}
+section {
+    height: 100vh;
+    width: 100%;
+}
+
+@media (max-width: 464px) {
+    .logo-div #a2 {
+        display: none;
+    }
+
+    .heading1 {
+        text-align: right;
+    }
+
+    .heading1 h1 {
+        font-size: 62px;
+    }
+
+    .heading1 h2 {
+        font-size: 32px;
+    }
+
+}
